@@ -1,39 +1,29 @@
-import { styled, Box } from '@mui/material';
+import { styled, Box, Grid, Paper, Table } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Typography, Appbar } from '@mui/material';
-import {white} from '@mui/material/colors';
 
-  const HeaderBox = styled(Box)`
-    background: #D34829;
+const Head = styled(Box)`
     display: flex;
-    Height: 40px;
-    position: static;
-    top: 0px;
-
- content {
-    align: right;
-    display: flex;
-    color: white;
-    top:20px;
-    bottom: 20px;
- }
-`  
+    gap: 16px;
+    margin-right: auto;
+    align: center; 
+`
 
 const Header = () => {
     return (
-        <HeaderBox>
-            <content>
-             <Typography>Lost Your Token?</Typography>
-             
-    
-             <TwitterIcon fontSize="medium"/>
-             <FacebookIcon fontSize="medium"/>
-             <InstagramIcon fontSize="medium"/>
-        </content>
-        </HeaderBox>
+        
+<Head sx={{ color: "#ffffff", background: "#D34829", height:20, position:"relative", padding:2 }}>
+  
+          
+            <div sx={{width:50, right:190}}><Typography>Lost Your Token?</Typography></div>
+            <div> <TwitterIcon fontSize="medium"/> </div>
+            <div> <FacebookIcon fontSize="medium"/></div>
+            <div margin-left="auto"> <InstagramIcon fontSize="medium"/></div>
+</Head>
     )
 }
 
-export default Header;
+export default Header; 
+

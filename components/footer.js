@@ -6,7 +6,7 @@ const FooterBox = styled(Box)`
     left: 0;
     right: 0;
     Height: 50px;
-    position: absolute;
+    position: relative;
 
  content {
     display: flex;
